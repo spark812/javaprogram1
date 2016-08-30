@@ -1,20 +1,39 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Chapter 1 demo
+ * Pages 18, 23, 25, 27, 29(if demo), 31 (for loop), 35
  */
-package example5;
+
 
 /**
  *
  * @author sarahpark
  */
-public class Example5 {
+public class Chapter1 {
 
    public static void main(String[] args) {
-        PrintSquares();
+       Example1();
+       Example2();
         
     }
+   
+   public static void Example() {
+       System.out.println("Java drives the web");
+   }
+   
+   public static void Example2() {
+       int var1;
+       int var2;
+       
+       var1 = 1024;
+       
+       System.out.println("var1 contains " + var1);
+       
+       var2 = var1 / 2;
+       
+       System.out.print("var2 contains var1/2: ");
+       System.out.println(var2);
+       
+   }
     
    public static void SumFrom1to10() {
        int sum, i;
