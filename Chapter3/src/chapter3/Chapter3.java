@@ -15,18 +15,21 @@ public class Chapter3 {
 
     /**
      * @param args the command line arguments
+     * 
      */
-    public static void main(String[] args) 
-    throws java.io.IOException {
-        
-        
-        char ch;
-        System.out.print("Press any key followed by ENTER: ");
-        
-        ch = (char)System.in.read();
-        System.out.print("your character is: " + ch);
-        
+    public static void main(String[] args) { 
+    
+           
     }
+    
+    public static void SqrRoot() {
+    double num, sroot; 
+    
+    for(num = 1.0; num < 100.0; num++) {
+        sroot = Math.sqrt(num);
+        System.out.println("Square root of " + num + " is " + sroot);
+    }
+}
     
     
 }
