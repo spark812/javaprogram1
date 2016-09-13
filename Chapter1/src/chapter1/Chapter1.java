@@ -15,9 +15,7 @@ public class Chapter1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Example();
-        Example2();
-        Example3();
+        InchToMeterTable();
     }
     
     public static void Example() {
@@ -53,6 +51,23 @@ public class Chapter1 {
        System.out.println("x/3: " + x/3);
    }
     
+    public static void GalToLit() {
+       double gallons;
+       double liters;
+       
+       gallons = 10;
+       liters = gallons * 3.7854;
+       
+       System.out.println(gallons + " gallons is " + liters +
+               " liters.");
+   }
+   
+   public static void WeightOnMoon() {
+       double weightEarth = 120;
+       double weightMoon = weightEarth * .17;
+       
+   }
+    
    public static void SumFrom1to10() {
        int sum, i;
         sum = 0;
@@ -60,6 +75,52 @@ public class Chapter1 {
         for(i = 1; i <=10; i++) 
            sum = sum + i;
            System.out.println("The sum 1 + 2 + ... + 10 is " + sum);
+   }
+   
+   public static void ForDemo() {
+       int count;
+       
+       for(count = 0; count < 5; count++)
+           System.out.println("This is count: " + count);
+       
+       System.out.println("Done!");
+   }
+   
+   public static void GalToLitTable() {
+       double gallons, liters;
+       int counter;
+       
+       counter = 0;
+       for(gallons = 1; gallons <=100; gallons++) {
+           liters = gallons * 3.7854;
+           System.out.println(gallons + " gallons is " + liters + 
+                   " liters.");
+           
+           counter++;
+           
+           if(counter == 10) {
+               System.out.println();
+               counter = 0;
+           }
+       }
+   }
+   public static void InchToMeterTable() {
+       double inch, meter;
+       int counter;
+       
+       counter = 0;
+       for(inch = 1; inch <=108; inch++) {
+           meter = inch / 39.37;
+           System.out.println(inch + " inch is " + meter + 
+                   " meters.");
+           
+           counter++;
+           
+           if(counter == 12) {
+               System.out.println();
+               counter = 0;
+           }
+       }
    }
    
    public static void ConvertFtoC() {
@@ -71,6 +132,8 @@ public class Chapter1 {
                + cTemp + " degrees Celsius");
    }
  
+  
+   
    public static void PrintSquares() {
        int result, i;
        result = 1;
